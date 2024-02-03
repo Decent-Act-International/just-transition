@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;
+  height: 65px;
+  width: 1140px; /* Set the width to 1140 pixels */
+  margin: 0 auto; /* Center the navbar horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+/* Navigation menu styles */
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333; /* Standard color for the menu items */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px; /* Adjust the font size based on your design */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+  color: #4CAF50; /* Hover color for the menu items */
+}
+
+
+/* Donate button styles */
+
+.donate-button a {
+  background-color: #4CAF50; /* Standard background color for the donate button */
+  color: #ffffff; /* Standard text color for the donate button */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px; /* Adjust the font size based on your design */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.donate-button a:hover {
+  background-color: #45A049; /* Hover background color for the donate button */
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 1140px) {
+  .navbar {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .donate-button {
+    margin-top: 10px;
+  }
+
+  .nav-menu {
+    width: 100%;
+    order: -1; /* Move the menu to the top in mobile view */
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu li {
+    margin: 0;
+  }
+}
+
+#carouselExample {
+  max-width: 1140px; /* Set your desired width */
+  max-height: 641.25px; /* Set your desired height */
+  overflow: hidden;
+  margin: auto; /* Center the carousel horizontally */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 170px;
+  transform: translateY(-50%);
+  text-align: left;
+  color: #ffffff; /* Text color for titles and descriptions */
+  padding: 20px;
+  width: calc(100% - 170px); /* Adjust the width to compensate for the left margin */
+  box-sizing: border-box;
+  box-shadow: none; /* Remove box shadow */
+}
+
+.carousel-caption h5 {
+  font-size: 24px; /* Font size for titles */
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 16px; /* Font size for descriptions */
+}
+
+
+.carousel-caption a.btn {
+  background-color: #4CAF50; /* Standard background color for the button */
+  color: #ffffff; /* Text color for the button */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px; /* Adjust the font size based on your design */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-caption a.btn:hover {
+  background-color: #45A049; /* Hover background color for the button */
+}
